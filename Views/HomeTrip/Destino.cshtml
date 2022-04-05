@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Destinos";
+}
+
+<h2>Qual é o próximo destino?</h2>
+
+
+    public async Task<IActionResult> Index()
+        {
+            return View(await _context.Destino.ToListAsync());
+            }

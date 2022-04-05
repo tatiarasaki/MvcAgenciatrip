@@ -1,0 +1,41 @@
+﻿@model IEnumerable<MvcAgenciatrip.Models.Promocao>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Seleção de pacotes para as próximas férias do seu cliente</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Desconto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destino)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Desconto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destino.DestinoId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PromocaoId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PromocaoId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PromocaoId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

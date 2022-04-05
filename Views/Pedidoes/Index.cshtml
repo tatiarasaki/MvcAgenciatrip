@@ -1,0 +1,72 @@
+﻿@model IEnumerable<MvcAgenciatrip.Models.Pedido>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="jumbotron">
+    <h1>Plataforma para agentes e guias de viagens</h1>
+</div>
+   
+        <h2>Bem-vinda à TRIP</h2>
+        <p>Inspire viajantes</p>
+
+        <h3>Registre o pedido da cliente logo abaixo</h3>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sobrenome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PedidoData)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destino)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sobrenome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PedidoData)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destino.DestinoId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PedidoId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PedidoId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PedidoId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

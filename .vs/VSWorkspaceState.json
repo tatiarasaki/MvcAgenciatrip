@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Data",
+    "\\Migrations",
+    "\\Views",
+    "\\Views\\Destinoes",
+    "\\Views\\Home",
+    "\\Views\\HomeTrip",
+    "\\wwwroot",
+    "\\wwwroot\\css",
+    "\\wwwroot\\js"
+  ],
+  "SelectedNode": "\\MvcAgenciatrip.csproj",
+  "PreviewInSolutionExplorer": false
+}
