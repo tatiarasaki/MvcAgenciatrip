@@ -165,3 +165,4 @@ C:\Users\tatic\Documents\PROGRAMACAO\C#\AgenciaTrip\MvcAgenciatrip\obj\Debug\net
 C:\Users\tatic\Documents\PROGRAMACAO\C#\AgenciaTrip\MvcAgenciatrip\obj\Debug\netcoreapp3.1\Razor\Views\Pedidoes\Details.cshtml.g.cs
 C:\Users\tatic\Documents\PROGRAMACAO\C#\AgenciaTrip\MvcAgenciatrip\obj\Debug\netcoreapp3.1\Razor\Views\Pedidoes\Edit.cshtml.g.cs
 C:\Users\tatic\Documents\PROGRAMACAO\C#\AgenciaTrip\MvcAgenciatrip\obj\Debug\netcoreapp3.1\Razor\Views\Pedidoes\Index.cshtml.g.cs
+C:\Users\tatic\Documents\PROGRAMACAO\C#\AgenciaTrip\MvcAgenciatrip\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll

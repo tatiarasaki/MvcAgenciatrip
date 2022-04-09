@@ -31,6 +31,7 @@
     ".NETCoreApp,Version=v3.1": {
       "MvcAgenciatrip/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.21",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.21",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.5",
@@ -309,6 +310,20 @@
         },
         "compile": {
           "MvcAgenciatrip.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/3.1.2": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.21"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
+            "assemblyVersion": "3.1.2.0",
+            "fileVersion": "3.100.220.6801"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {}
         }
       },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -3822,6 +3837,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0ysz80HcarZUsfQm/AjEXrFso3IqUd69+XCtx73UKEdkT1KGAQl/GAtIsJ5xZ4Fnz8M58locJXbReR2IKE5nsw==",
+      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/3.1.2",
+      "hashPath": "microsoft.aspnetcore.diagnostics.entityframeworkcore.3.1.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "type": "package",
